@@ -1,0 +1,21 @@
+.admin-header {
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.admin-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.admin-main {
+    padding: 1rem;
+}
+
+.stats-grid {
+    grid-template-columns: 1fr;
+}
+
+.dashboard-container {
+    padding: 0.5rem;
+}

@@ -1,0 +1,46 @@
+/* Global Styles */
+@import url('global.css');
+
+/* Header Styles */
+@import url('header/desktop.css');
+@import url('header/mobile.css');
+
+/* Hero Styles */
+@import url('hero/desktop.css');
+@import url('hero/mobile.css');
+
+/* Property Filter Styles */
+@import url('property-filter/desktop.css');
+@import url('property-filter/mobile.css');
+
+/* About Styles */
+@import url('about/desktop.css');
+@import url('about/mobile.css');
+
+/* Properties Styles */
+@import url('properties/desktop.css');
+@import url('properties/mobile.css');
+
+/* Properties Carousel Styles */
+@import url('properties-carousel/desktop.css');
+@import url('properties-carousel/mobile.css');
+
+/* Testimonials Styles */
+@import url('testimonials/desktop.css');
+@import url('testimonials/mobile.css');
+
+/* Contact Map Styles */
+@import url('contact-map/desktop.css');
+@import url('contact-map/mobile.css');
+
+/* Special Offers Styles */
+@import url('special-offers/desktop.css');
+@import url('special-offers/mobile.css');
+
+/* Footer Styles */
+@import url('footer/desktop.css');
+@import url('footer/mobile.css');
+
+/* FAQ Styles */
+@import url('faq/desktop.css');
+@import url('faq/mobile.css');

@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 0;
+    }
+    
+    .about-main {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .feature {
+        padding: 1.5rem 1rem;
+    }
+    
+    .feature i {
+        font-size: 2rem;
+    }
+    
+    .feature h3 {
+        font-size: 1.1rem;
+    }
+}

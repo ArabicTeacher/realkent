@@ -1,0 +1,307 @@
+.properties-carousel {
+    position: relative;
+    margin: 3rem 0;
+    padding: 0 50px;
+}
+
+.carousel-container {
+    overflow: hidden;
+    margin: 0 -15px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.carousel-slide {
+    flex: 0 0 calc(33.333% - 2rem);
+    min-width: 320px;
+}
+
+.property-card {
+    background: var(--background-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+    height: 100%;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.property-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover .property-image img {
+    transform: scale(1.05);
+}
+
+.property-type {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.property-price {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: var(--secondary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    font-size: 1.1rem;
+    z-index: 2;
+}
+
+.property-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.property-card:hover .property-overlay {
+    opacity: 1;
+}
+
+.view-details-btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.property-details {
+    padding: 1.5rem;
+}
+
+.property-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+    line-height: 1.3;
+}
+
+.property-location {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.property-location i {
+    color: var(--primary-color);
+}
+
+.property-features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.property-features span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.property-features i {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.property-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    flex: 1;
+}
+
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    color: var(--text-light);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.btn-icon:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: var(--background-white);
+    box-shadow: var(--shadow);
+    color: var(--secondary-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: var(--transition);
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.carousel-dots .dot.active {
+    background: var(--primary-color);
+    transform: scale(1.2);
+}
+
+.section-actions {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .carousel-slide {
+        flex: 0 0 calc(50% - 2rem);
+    }
+    
+    .properties-carousel {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-slide {
+        flex: 0 0 calc(100% - 2rem);
+    }
+    
+    .properties-carousel {
+        padding: 0 30px;
+    }
+    
+    .carousel-prev,
+    .carousel-next {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Land Card Specific Styles */
+.land-card .property-features {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.land-card .property-features span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.land-card .property-features i {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.land-card .property-description {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--background-light);
+    border-radius: var(--border-radius);
+}
+
+.land-card .property-description p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.5;
+}

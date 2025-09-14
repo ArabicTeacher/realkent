@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+    .contact-map-section {
+        padding: 60px 0;
+    }
+    
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .contact-form {
+        gap: 1rem;
+    }
+    
+    .map-content {
+        padding: 1.5rem;
+    }
+    
+    .map-image {
+        height: 150px;
+    }
+    
+    .map-fallback i {
+        font-size: 2rem;
+    }
+    
+    .map-fallback p {
+        font-size: 0.8rem;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .contact-item i {
+        margin-top: 0;
+    }
+}

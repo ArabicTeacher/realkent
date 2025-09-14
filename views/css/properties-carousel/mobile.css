@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+    .properties-carousel {
+        padding: 0 20px;
+        margin: 2rem 0;
+    }
+    
+    .carousel-track {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .carousel-slide {
+        flex: 0 0 calc(100% - 1rem);
+        min-width: 280px;
+    }
+    
+    .property-image {
+        height: 200px;
+    }
+    
+    .property-details {
+        padding: 1rem;
+    }
+    
+    .property-features {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .property-features span {
+        flex: 1;
+        min-width: 80px;
+    }
+    
+    .carousel-prev,
+    .carousel-next {
+        width: 35px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+    
+    .carousel-dots {
+        margin-top: 1.5rem;
+    }
+}

@@ -1,0 +1,219 @@
+/* Header Styles */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo h2 {
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.desktop-nav {
+    display: block;
+}
+
+.desktop-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.desktop-nav a:hover {
+    color: #3498db;
+}
+
+.search-link {
+    color: #3498db !important;
+    font-weight: 600 !important;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.language-switcher {
+    position: relative;
+    cursor: pointer;
+}
+
+.language-switcher span {
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.language-switcher ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    list-style: none;
+    width: 100px;
+    display: none;
+}
+
+.language-switcher:hover ul {
+    display: block;
+}
+
+.language-switcher ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.language-switcher ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.language-switcher ul li:hover {
+    background-color: #f8f9fa;
+}
+
+.mobile-menu-toggle {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+/* Sticky header */
+.main-header.sticky {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Bottom Navigation */
+.mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--background-white);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 8px 0;
+}
+
+.mobile-bottom-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-light);
+    padding: 8px 0;
+    transition: var(--transition);
+}
+
+.nav-link.active {
+    color: var(--primary-color);
+}
+
+.nav-link i {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.nav-text {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+/* Hide elements on mobile */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+    
+    .language-switcher {
+        display: none;
+    }
+    
+    .social-icons {
+        display: none;
+    }
+    
+    /* Adjust main content padding to account for bottom nav */
+    main {
+        padding-bottom: 70px;
+    }
+}
+
+/* Show bottom nav only on mobile */
+@media (min-width: 769px) {
+    .mobile-bottom-nav {
+        display: none;
+    }
+}

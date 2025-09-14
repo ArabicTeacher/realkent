@@ -1,0 +1,50 @@
+mekkent.com
+├───admin
+│   ├───assets
+│   │   ├───css
+│   │   │   ├───dashboard
+│   │   │   ├───global
+│   │   │   ├───login
+│   │   │   ├───menu
+│   │   │   └───properties
+│   │   └───js
+│   │       ├───global
+│   │       ├───images
+│   │       ├───login
+│   │       └───menu
+│   ├───includes
+│   ├───languages
+│   └───views
+├───app
+│   ├───config
+│   ├───controllers
+│   ├───core
+│   └───models
+├───public
+│   ├───assets
+│   │   ├───css
+│   │   │   ├───about
+│   │   │   ├───details_pages
+│   │   │   ├───filter
+│   │   │   ├───footer
+│   │   │   ├───global
+│   │   │   ├───header
+│   │   │   ├───hero
+│   │   │   ├───hot_offers
+│   │   │   ├───map
+│   │   │   └───properties_card
+│   │   ├───images
+│   │   │   ├───agents
+│   │   │   ├───general
+│   │   │   └───properties
+│   │   └───js
+│   │       ├───details_page
+│   │       ├───filter
+│   │       ├───global
+│   │       ├───header
+│   │       ├───hero
+│   │       └───hot_offers
+│   ├───includes
+│   ├───languages
+│   └───views
+└───vendor
